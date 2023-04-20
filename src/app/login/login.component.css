@@ -1,0 +1,56 @@
+ body{
+    font-family: 'Roboto', sans-serif;
+ }
+ .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-google, .btn-facebook {
+    color: #475569 !important;
+    background-color: #F1F5F9;
+    width: 45%;
+  } 
+
+  #login{
+    background-color: #1E293B;
+  }
+  .card-title{
+    font-size: 32px;
+    font-weight: 800;
+  }
+  label{
+    color: #828282;
+  }
+  form-control::content{
+    color: black;
+  }
+  
+  .form-control:focus {
+    box-shadow: none !important;
+    border-bottom: 2px solid black;
+    }
+    .form-control{
+        border-radius: 0;
+        border-left: none;     border-top: none;     border-right: none;
+    }
+
+    #login{
+        background-color: #000113;
+        border: none;
+    }
+
+    #forgot{
+        text-align: right;
+        margin-bottom: 4rem;
+    }
+    #forgot a,p a{
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+    /*     
+    .card-body{
+        margin-top: -100px;
+    } */
