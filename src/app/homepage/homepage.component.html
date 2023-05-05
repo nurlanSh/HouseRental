@@ -1,0 +1,89 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<app-navbar></app-navbar>
+
+  <form class="form-inline">
+    <div class=" left-inner-addon input-container">
+
+      <div class="input-icons">
+        <i class="fa fa-solid fa-location-dot icon"></i>
+        <input id="input" class="input-field"  type="text" placeholder="Street,Address,City...">
+        <i class="fa fa-solid fa-dollar-sign icon"></i>
+        <input class="input-field" type="text" placeholder="10-100$">
+        <i class="fa fa-regular fa-circle-user icon"></i>
+        <input class="input-field" type="text" placeholder="Meet">
+        <!-- <input class="input-field" type="date" placeholder="Jan 06"> -->
+        <input class="bookinp" type="text" placeholder="Jan 06"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')">
+        <input class="bookinp" type="text" placeholder="4PM - 7PM"
+          onfocus="(this.type='time')"
+          onblur="(this.type='text')">
+        <!-- <input class="input-field" type="time" placeholder="4 PM - 7 PM"> -->
+      </div>
+
+    <button id="find" type="submit" style="font-weight: bolder;" >Find</button>
+    </div>
+  </form>
+
+  <div class="content">
+
+    <div id="recommended">
+        <h4>Recommended For You</h4>
+        <!-- <div style="float: right; margin-right: 3rem;"><a style="text-decoration: none;" href="#">Show All</a></div> -->
+        <div class="row">
+            <div routerLink="/details" class="hotelimage"><img src="assets/img/hotelimage.png" alt=""></div>
+     
+            <div class="specs my-auto">
+                <p id="hoteltype">Landmark</p>
+                <p id="hotellocation">90A nizami street</p>
+                <p id="hoteldistance" style="margin-bottom: 2.7rem;">1.5km away</p>
+                <div class="price">
+                  <p>&starf;4.8</p>
+                  <p>$11</p>
+                  <p style="color: gray;">/Hour</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div routerLink="/details" class="hotelimage"><img src="assets/img/hotelimage.png" alt=""></div>
+     
+            <div class="specs my-auto">
+                <p id="hoteltype">Landmark</p>
+                <p id="hotellocation">90A nizami street</p>
+                <p id="hoteldistance" style="margin-bottom: 2.7rem;">1.5km away</p>
+                <div class="price">
+                  <p>&starf;4.8</p>
+                  <p>$11</p>
+                  <p style="color: gray;">/Hour</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div routerLink="/details" class="hotelimage"><img  src="assets/img/hotelimage.png" alt=""></div>
+    
+            <div class="specs my-auto">
+                <p id="hoteltype">Landmark</p>
+                <p id="hotellocation">90A nizami street</p>
+                <p id="hoteldistance" style="margin-bottom: 2.7rem;">1.5km away</p>
+                <div class="price">
+                  <p>&starf;4.8</p>
+                  <p>$11</p>
+                  <p style="color: gray;">/Hour</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+  <div id="map" class="full">
+  </div>
+</div>

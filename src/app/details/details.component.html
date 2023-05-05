@@ -1,0 +1,69 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<app-navbar></app-navbar>
+
+<body>
+  <div class="content mx-auto">
+    <div class="goback">
+      <div style="cursor: pointer;" routerLink="/homepage"><h5><i id="icon" style="margin-right: 1rem;" class="fa-solid fa-arrow-left"></i>Show all offices</h5></div>
+      <!-- <div><img style="width: 20px;" src="assets/img/heart.png"></div> -->
+      <div><span class="favorite-icon" title="Add to Favorites"></span></div>
+
+    </div>
+    <div class="images">
+        <div class="box a"><img src="assets/img/office.jpg"></div>
+        <div class="box b"><img src="assets/img/sky.jpg"></div>
+        <div class="box b"><img src="assets/img/office.jpg"></div>
+        <div class="box d"><img src="assets/img/office.jpg"></div>
+        <div class="box d"><img src="assets/img/sky.jpg"></div>
+    </div> 
+
+
+    <div class="details">
+      <div class="my-5">
+        <h1>Caspian Plaza</h1>
+        <span>&starf;4.8</span>
+          <div>
+            <i id="icon" class="fa-solid fa-location-dot fa-2xl"></i>
+            <p id="loc">19A Ahmad Rajabli, Baku 1052</p>
+          </div>
+      </div>
+      <div id="booknow">
+        <h2>Book Now</h2>
+        <div class="input-container">
+          <input class="bookinp" type="text" placeholder="Jan 06"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')">
+          <i class="fa fa-calendar icon-calendar icon"></i>
+        </div>
+        <div class="input-container">
+          <input class="bookinp" type="text" placeholder="4PM - 7PM"
+          onfocus="(this.type='time')"
+          onblur="(this.type='text')">
+          <i class="fa fa-clock icon-clock icon"></i>     
+        </div>
+
+      </div>
+      
+      <div class="hoteldetails my-5">
+        <h2>Details</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus autem nobis recusandae cumque, esse minus? Quae voluptate, accusantium similique quasi suscipit rerum sapiente delectus quod illum, velit obcaecati, vitae error!</p>
+          <div class="icon-container"><i id="icon" class="fa-solid fa-square-parking fa-2xl"></i><p>Parking</p></div>
+          <div class="icon-container"><i id="icon" class="fa-solid fa-wifi fa-2xl"></i><p>Wi-Fi</p></div>
+          <div class="icon-container"><i id="icon" class="fa-solid fa-fan fa-2xl"></i><p>AC</p></div>
+          <div class="icon-container"><i id="icon" class="fa-solid fa-mug-hot fa-2xl"></i><p>Coffee</p></div>
+      </div>
+
+      <div>
+        <div class="my-5">
+          <h1>$11/Hour</h1>
+          <span><button id="book">Book Office</button></span>
+        </div>
+      </div>
+      </div>
+</div>
+</body>

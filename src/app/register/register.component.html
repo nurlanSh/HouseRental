@@ -1,10 +1,10 @@
-  <section class="vh-100">
+<section class="vh-100">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col col-xl-10">
           <div class="card" style="border-radius: 1rem;">
             <div class="row g-0">
-              <div class="images col-md-12 col-lg-7 d-none d-md-block">
+              <div class="images col-md-6 col-lg-7 d-none d-md-block">
                 <img src="assets/img/ev2.webp"
                   alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; height: 100%;" />
                
@@ -13,7 +13,7 @@
               </div>
               <div class="col-lg-5 d-flex align-items-center">
                 <div class="card-body p-4 text-black">
-                    <h5 class="card-title text-center mt-0 mb-5">Login</h5>
+                    <h5 class="card-title text-center mt-0 mb-5">Sign up</h5>
 
                     <form>
                         <div class="form-floating mb-4">
@@ -21,28 +21,24 @@
                           <label for="floatingInput">Email</label>
                         </div>
                         <div class="form-floating mb-4">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="Username">
+                            <label for="floatingInput">Username</label>
+                          </div>
+                        <div class="form-floating mb-4">
                           <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                           <label for="floatingPassword">Password</label>
                         </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
+                            <label for="floatingPassword">Confirm Password</label>
+                          </div>
           
-                        <div id="forgot">
-                            <a href="#">Forgot?</a>
+                        <div class="d-grid" style="margin-top: 67px;">
+                          <button id="login" routerLink="/login" class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign Up</button>
                         </div>
-                        <div class="d-grid">
-                          <button id="login" routerLink="/homepage" class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Log
-                            in</button>
-                        </div>
-                        <p class="my-4" style="text-align: center; color: #64748B;">Or continue with</p>
-                        <div style="display:flexbox;">
-                          <button class="btn btn-google btn-login" type="submit">
-                            <i class="fab fa-google me-4"></i>Google
-                        </button>
-                          <button style="float: right;" class="btn btn-facebook btn-login" type="submit">
-                            <i class="fab fa-facebook-f me-4"></i>Facebook
-                          </button>
-                        </div>
+
                         <p class="my-5" style="text-align: center;">
-                            Don`t you have an account? <a routerLink="/register">Create Now</a>
+                            Already have an account? <a routerLink="/login">Log in</a>
                         </p>
                       </form>
   

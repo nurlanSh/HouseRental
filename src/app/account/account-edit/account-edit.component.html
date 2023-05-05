@@ -1,0 +1,66 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<app-navbar></app-navbar>
+
+
+    <div class="sidebar">
+        <a class="active"><i class="fa fa-thin fa-pen-to-square fa-fw me-3"></i>Edit Profile</a>
+        <a routerLink="/history"><i class="fa fa-thin fa-file-lines fa-fw me-3"></i>Booking History</a>
+        <a routerLink="/login"><i class="fa fa-thin fa-arrow-right-from-bracket fa-fw me-3"></i>Log Out</a>
+    </div>
+  
+    
+  <div class="content">
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-9">
+            <form class="form-horizontal">
+                <div class="panel panel-default">
+                  <div class="panel-body text-center">
+                   <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="img-circle profile-avatar" alt="User avatar">
+                  </div>
+                </div>
+
+              <div class="panel panel-default">
+                <div class="panel-body my-5">
+                    <div class="col-sm-4 mx-auto mb-5">
+                        <p style="color: gray;">Share a little bit about yourself!</p>
+                    </div>
+                    <div class="input-icons">
+                    <div class="col-sm-5 mx-auto">
+                      <i class="fa fa-light fa-user fa-xl icon"></i>
+                      <input type="text" class="form-control input-field" placeholder="Eleanor Dela">
+                  </div>
+                    <div class="col-sm-5 mx-auto my-3">
+                        <i class="fa fa-light fa-envelope fa-xl icon"></i>
+                      <input type="text" class="form-control input-field" placeholder="eleanordela@gmail.com">
+                  </div>
+                  
+                  <div class="col-sm-5 mx-auto my-3">
+                    <i class="fa fa-light fa-phone fa-xl icon"></i>
+                    <input type="tel" class="form-control input-field" placeholder="Mobile Number">
+                  </div>
+                  
+                  <div class="col-sm-5 mx-auto mb-2">
+                    <i class="fa fa-solid fa-lock fa-xl icon"></i>
+                    <input type="password"  class="form-control input-field" placeholder="**********">
+                  </div>
+                  <div class="col-sm-5 mx-auto mb-4">
+                    <a routerLink="/changepassword" style="text-decoration: none;">Change Password</a>
+                  </div>
+                  </div>
+                  <div class="col-sm-5 mx-auto">
+                    <div class="d-grid">
+                        <button id="update" class="btn btn-primary" type="submit">Update</button>
+                    </div>                 
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+  </div>

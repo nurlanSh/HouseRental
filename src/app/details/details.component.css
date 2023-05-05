@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+ }
+*:not(#icon){
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.navbar-collapse li{
+    margin-left: 40px;
+}
+.navbar-collapse ul{
+    margin-left: auto;
+}
+nav{
+
+    background-color: #fff;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+li a{
+    color: #1A1A1A;
+}
+
+/* navbar bitdi */
+
+.goback div{
+  display: inline-block;
+  height: 60px;
+  margin-top: 20px;
+}
+.goback div:nth-child(2){
+  float: right;
+}
+
+.favorite-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://cdn3.iconfinder.com/data/icons/twitter-20/512/166_Heart_Love_Like_Twitter-512.png'); /* Replace with your icon image */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.favorite-icon:hover {
+  background-image: url(https://t4.ftcdn.net/jpg/01/36/19/15/360_F_136191533_Lu5etjGn5OmCZlouJ525Gg3usrN6NN1Y.jpg);
+  cursor: pointer;
+}
+
+.favorite-icon:focus {
+  background-image: url(https://t4.ftcdn.net/jpg/01/36/19/15/360_F_136191533_Lu5etjGn5OmCZlouJ525Gg3usrN6NN1Y.jpg);
+  outline: none;
+}
+/* goback bitdi */
+
+.content{
+    width: 60vw;
+}
+
+.details{
+    position: relative;
+}
+.images {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, [col] 15vw ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+  }
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ .a {
+    grid-column: col / span 2;
+    grid-row: row / span 2;
+  }
+
+  /* images bitdi */
+
+  .details h1{
+    display: inline-block;
+  }
+  .details span{
+    float: right;
+    font-size: 200%;
+    color:rgba(192, 163, 11, 1);
+  }
+  
+  .details #loc {
+    display: inline-block;
+    margin-left: 1rem;
+    color: rgba(130, 130, 130, 1) ;
+  }
+  .details i{
+    color: rgba(130, 130, 130, 1);
+  }
+  .hoteldetails #icon{
+    margin-right: 3rem;
+  }
+
+  /* details bitti */
+
+  #book{
+    font-size: 24px;
+    color: #fff;
+    background: #1A1A1A;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 10px 80px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .bookinp{
+    background: #FFFFFF;
+    margin-right: 2rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .icon-container {
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+  }
+  .icon-container i{
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+
+ /* book now iconlar */
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input-container input {
+    padding-left: 55px;
+  }
+  
+  .input-container .icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+ 
+  .icon-clock:before {
+    content: "\f017"; 
+    font-family: "FontAwesome"; 
+  } 
+  .icon-calendar:before {
+    content: "\f133"; 
+    font-family: "FontAwesome"; 
+  } 
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
