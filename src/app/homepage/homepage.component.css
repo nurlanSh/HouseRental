@@ -89,13 +89,12 @@ input {
 }
 .row{
     display: flex;
-    margin-bottom: 20px;
     background: rgba(255, 255, 255, 1);
     border-radius: 16px;
     margin-left: 2rem;
+    margin-bottom: 20px;
     width: 680px;
     height: 200px;
-    /* width: 90% ; */
     box-shadow: 0px -11px 23px 0px rgba(0, 0, 0, 0.1);
 }
 .hotelimage{
@@ -106,7 +105,6 @@ input {
 }
 .specs{
     width: auto;
-    /* margin-top: 25px; */
 }
 .price{
     width: 300px;
@@ -182,7 +180,6 @@ p{
         margin-right: 2rem;
     }
     .price p:nth-child(2){
-        /* margin-left:150px;  */
         font-size: 16px; 
         color: rgba(10, 107, 203, 1);
     }

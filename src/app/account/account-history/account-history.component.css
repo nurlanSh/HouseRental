@@ -56,6 +56,9 @@ body{
     }
     .sidebar a {float: left; font-size: 16px;}
     div.content {margin-left: 0;}
+    .row{
+      width: 400px;
+    }
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
